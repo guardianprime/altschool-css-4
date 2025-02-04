@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Website</h1>
+      <img src="Logo.png" alt="company logo"/>
+      <h1>For individuals</h1>
+      <p>Inspiring wholesome harmony for the body, mind and spirit, for everyone, everywhere.</p>
     </header>
     <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a brief description about the website.</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Contact us at email@example.com</p>
-        </section>
+      <form>
+        <div class="inputs-wrapper">
+          <div class="input-container">
+            <label for="first-name">First Name</label>
+            <input type="text" placeholder="john" />
+          </div>
+          <div class="input-container">
+            <label for="last-name">Last Name</label>
+            <input type="text" placeholder="doe" />
+          </div>
+        </div>
+        <div class="inputs-wrapper">
+          <div class="input-container">
+            <label>Gender</label>
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label>Date of Birth</label>
+            <input type="date"/>
+        </div>
+        </div>
+        <div class="inputs-wrapper">
+          <div class="input-container">
+            <label>Weight (kg)</label>
+            <input type="number"/>
+          </div>
+          <div class="input-container">
+            <label>Height (cm)</label>
+            <input type="number"/>
+          </div>
+        </div>
+        <div class="input-container">
+          <label>Activity Level</label>
+          <select>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Professional</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label>Password</label>
+          <input type="password"/>
+        </div>
+        <button>Register</button>
+      </form>
     </main>
     <footer>
-        <p>&copy; 2023 My Website</p>
+      <p>By clicking to register you agree to our terms of use and our Privacy policy.</p>
     </footer>
-</body>
+  </body>
 </html>
