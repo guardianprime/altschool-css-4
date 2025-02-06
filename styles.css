@@ -1,33 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
 /* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Sofia Sans", serif;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-ul, ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+ul,
+ol {
+  list-style: none;
 }
 
 button {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 /* END OF RESET */
+
+header {
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+  background-color: #f7fdfc;
+}
+
+form {
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+.input-container {
+  width: 100%;
+  height: 100px;
+}
+
+.input-container input,
+.input-container select {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 1.1rem;
+  border: 2px solid #f0f0f0;
+}
+
+label {
+  font-weight: 700;
+  color: #011c34;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #2ec4b6;
+}
+
+form button {
+  background-color: #2ec4b6;
+  width: 100%;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+  padding: 0px 35px 30px 35px;
+}
+
+.link {
+  color: #2ec4b6;
+}
+
+input::placeholder {
+  font-weight: 400;
+}
+
+.input-container select option:first-of-type {
+  color: rgb(33, 33, 33);
+  font-weight: 400;
+  font-size: 1rem;
+}

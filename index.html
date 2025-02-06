@@ -3,67 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web development training</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <img src="Logo.png" alt="company logo"/>
+      <img src="Logo.png" alt="company logo" />
       <h1>For individuals</h1>
-      <p>Inspiring wholesome harmony for the body, mind and spirit, for everyone, everywhere.</p>
+      <p>
+        Inspiring wholesome harmony for the body, mind and spirit, for everyone,
+        everywhere.
+      </p>
     </header>
     <main>
       <form>
         <div class="inputs-wrapper">
           <div class="input-container">
             <label for="first-name">First Name</label>
-            <input type="text" placeholder="john" />
+            <input
+              type="text"
+              placeholder="john"
+              name="first-name"
+              id="first-name"
+            />
           </div>
           <div class="input-container">
             <label for="last-name">Last Name</label>
-            <input type="text" placeholder="doe" />
+            <input
+              type="text"
+              placeholder="doe"
+              name="last-name"
+              id="last-name"
+            />
           </div>
         </div>
         <div class="inputs-wrapper">
           <div class="input-container">
-            <label>Gender</label>
-            <select>
-              <option>Male</option>
-              <option>Female</option>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option value="select">select here</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
             </select>
           </div>
           <div class="input-container">
-            <label>Date of Birth</label>
-            <input type="date"/>
-        </div>
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" id="date-of-birth" name="date-of-birth" />
+          </div>
         </div>
         <div class="inputs-wrapper">
           <div class="input-container">
-            <label>Weight (kg)</label>
-            <input type="number"/>
+            <label for="weight">Weight (kg)</label>
+            <input
+              type="number"
+              name="weight"
+              id="weight"
+              placeholder="Enter weight"
+            />
           </div>
           <div class="input-container">
-            <label>Height (cm)</label>
-            <input type="number"/>
+            <label for="height">Height (cm)</label>
+            <input
+              type="number"
+              name="height"
+              id="height"
+              placeholder="Enter height"
+            />
           </div>
         </div>
         <div class="input-container">
-          <label>Activity Level</label>
-          <select>
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Professional</option>
+          <label for="activity">Activity Level</label>
+          <select name="activity" id="activity">
+            <option value="select">Select here</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="professional">Professional</option>
           </select>
         </div>
         <div class="input-container">
-          <label>Password</label>
-          <input type="password"/>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
         </div>
         <button>Register</button>
       </form>
     </main>
     <footer>
-      <p>By clicking to register you agree to our terms of use and our Privacy policy.</p>
+      <p>
+        By clicking to register you agree to our
+        <a href="#" class="link">terms of use</a> and our
+        <a href="#" class="link">Privacy policy</a>.
+      </p>
     </footer>
   </body>
 </html>
