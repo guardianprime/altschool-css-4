@@ -103,7 +103,9 @@ input::placeholder {
 }
 
 #password {
-  background-image: url();
+  background-image: url("eye-slash.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1000px) {
