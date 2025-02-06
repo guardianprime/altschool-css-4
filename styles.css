@@ -35,9 +35,11 @@ header {
   padding: 20px;
 }
 
+/* i had to change the background-color to #e2fef9 because there wasn't any contrast between the white and the off-white/teal */
+
 main {
   padding: 20px;
-  background-color: #f7fdfc;
+  background-color: #e2fef9;
 }
 
 form {
@@ -80,7 +82,7 @@ form button {
   color: white;
 }
 
-footer {
+.footer {
   margin-top: 10px;
   text-align: center;
   padding: 0px 35px 30px 35px;
@@ -98,4 +100,59 @@ input::placeholder {
   color: rgb(33, 33, 33);
   font-weight: 400;
   font-size: 1rem;
+}
+
+#password {
+  background-image: url();
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2fef9;
+    padding-inline: 50px;
+  }
+
+  header {
+    background-color: #e2fef9;
+    height: 80%;
+    width: 45%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.4rem;
+  }
+
+  header img {
+    width: 100px;
+    height: auto;
+  }
+
+  main {
+    width: 45%;
+  }
+
+  .inputs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .inputs-wrapper div {
+    width: 45%;
+  }
+}
+
+/* large laptops */
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding-inline: 100px;
+  }
 }
